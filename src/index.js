@@ -19,8 +19,8 @@ pesoRoute.forEach(
 
 
 const start = async () => {
-    await fastify.listen(process.env.PORT || 3000  )
-    fastify.log.info(`servidor escuchando  ${fastify.server.address().port}`);
+    await fastify.listen(process.env.PORT || 3000 , '0.0.0.0' )
+    console.log(`servidor escuchando  ${fastify.server.address().port}`);
 }
 
 start();
