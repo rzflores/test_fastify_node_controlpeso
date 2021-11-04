@@ -6,9 +6,9 @@ const pesoRoute = require('./routes/peso.routes')
 
 require('./utils/db')
 
-fastify.get("/",(request , reply)=>{
-    reply.send({data:"hola"})
-});
+// fastify.get("/",(request , reply)=>{
+//     reply.send({data:"hola"})
+// });
 
 pesoRoute.forEach(
     route => {
