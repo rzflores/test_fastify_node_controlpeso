@@ -20,7 +20,7 @@ const pesoRoute =
 {
     url : '/peso/:id',
     method : 'PUT',
-    handler : pesoController.obtenerPesoId
+    handler : pesoController.actualizarPeso
 },
 {
     url : '/peso/:id',
