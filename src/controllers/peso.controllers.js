@@ -47,6 +47,3 @@ module.exports = {
     eliminarPeso
 }
 
-// export.obtenerPesos = () => {
-    
-// }
