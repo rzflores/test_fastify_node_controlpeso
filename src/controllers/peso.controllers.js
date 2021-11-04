@@ -24,9 +24,8 @@ const crearPeso = async( req, repply ) => {
 }
 
 const actualizarPeso = async( req, repply ) => {
+    
     const pesoActualizado = await pesoModel.findByIdAndUpdate(req.params.id , req.body,{ new:true });
-    
-    
     repply.send(pesoActualizado);
 
 }
