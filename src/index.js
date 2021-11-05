@@ -16,7 +16,7 @@ pesoRoute.forEach(
     }
 )
 
-fastify.register(require('fastify-cors'), { options })
+fastify.register(require('fastify-cors'), { origin: true })
 
 const start = async () => {
     await fastify.listen(process.env.PORT || 3000 , '0.0.0.0' )
